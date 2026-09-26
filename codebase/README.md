@@ -24,8 +24,6 @@ codebase/
 │   ├── main.py                          # Banking Suite Entrypoint
 │   ├── banking_agents/                  # Scenario Agents (Fraud Triage, Underwriting, Ledger)
 │   └── tests/                           # Unit Tests for Banking Agents
-└── smart_recipe_assistant/            # Smart Recipe Agent Service Components
-    └── app/                             # FastAPI Adapter & Reasoning Engine Wrappers
 ```
 
 ---
@@ -95,7 +93,4 @@ codebase/
   python3 codebase/banking_agents/main.py
   ```
 
----
 
-### **4. Smart Recipe Assistant (`codebase/smart_recipe_assistant/`)**
-* **Purpose**: Contains FastAPI wrappers, A2A/A2UI adapters, and reasoning engine integration handlers.
