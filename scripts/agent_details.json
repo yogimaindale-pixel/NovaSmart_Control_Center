@@ -1,0 +1,535 @@
+{
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-west1/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-west1/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "agentId": "urn:agent:googleapis.com:locations:global:workspaceagent:workspaceagent--a2a",
+    "location": "global",
+    "displayName": "Workspace Agent",
+    "description": "A Workspace Agent is designed to power AI-driven features and workflows across Google Workspace applications like Docs and Slides.  It connects AI models, Workspace data, and tools to deliver intelligent features and automation within the Google Workspace ecosystem.",
+    "version": "1.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "protocolVersion": "0.3.0",
+        "interfaces": [
+          {
+            "url": "https://workspaceagent.googleapis.com/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": "create_presentation",
+        "name": "create_presentation",
+        "description": "Analyzes text to extract key topics and generates a multi-slide presentation. The URL to the presentation deck that was created will be returned in the text response."
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "createTime": "2026-02-06T16:37:41.413148Z",
+    "updateTime": "2026-02-06T16:37:41.413148Z"
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-west1/agents/agentregistry-00000000-0000-0000-5f31-d47ca81f3bbb": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-west1/agents/agentregistry-00000000-0000-0000-5f31-d47ca81f3bbb",
+    "agentId": "urn:agent:projects-260088329841:projects:260088329841:locations:us-west1:aiplatform:reasoningEngines:3495290290095259648",
+    "location": "us-west1",
+    "displayName": "customer-personalization-agent",
+    "description": "Official managed agent querying customer loyalty tiers and PII via novasmart-mcp.",
+    "version": "1.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "protocolVersion": "0.3.0",
+        "interfaces": [
+          {
+            "url": "https://us-west1-aiplatform.googleapis.com/v1beta1/projects/260088329841/locations/us-west1/reasoningEngines/3495290290095259648/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      },
+      {
+        "type": "CUSTOM",
+        "interfaces": [
+          {
+            "url": "https://us-west1-aiplatform.googleapis.com/v1/projects/260088329841/locations/us-west1/reasoningEngines/3495290290095259648:query",
+            "protocolBinding": "HTTP_JSON"
+          },
+          {
+            "url": "https://us-west1-aiplatform.googleapis.com/v1/projects/260088329841/locations/us-west1/reasoningEngines/3495290290095259648:streamQuery",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-5f31-d47ca81f3bbb",
+    "createTime": "2026-09-26T08:38:34.667014Z",
+    "updateTime": "2026-09-26T08:38:34.667014Z",
+    "attributes": {
+      "agentregistry.googleapis.com/system/RuntimeReference": {
+        "uri": "//aiplatform.googleapis.com/projects/260088329841/locations/us-west1/reasoningEngines/3495290290095259648"
+      },
+      "agentregistry.googleapis.com/system/Framework": {
+        "framework": "google-adk"
+      },
+      "agentregistry.googleapis.com/system/RuntimeIdentity": {
+        "principal": "sa://novasmart-customer-sa@qwiklabs-gcp-01-2aad14f2c696.iam.gserviceaccount.com"
+      }
+    },
+    "card": {
+      "type": "A2A_AGENT_CARD",
+      "content": {
+        "supportsAuthenticatedExtendedCard": true,
+        "capabilities": {
+          "streaming": true
+        },
+        "description": "Official managed agent querying customer loyalty tiers and PII via novasmart-mcp.",
+        "skills": [],
+        "defaultOutputModes": [
+          "text"
+        ],
+        "protocolVersion": "0.3.0",
+        "preferredTransport": "HTTP+JSON",
+        "defaultInputModes": [
+          "text"
+        ],
+        "url": "https://us-west1-aiplatform.googleapis.com/v1beta1/projects/260088329841/locations/us-west1/reasoningEngines/3495290290095259648/a2a",
+        "version": "1.0",
+        "name": "customer-personalization-agent"
+      }
+    }
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-west1/agents/agentregistry-00000000-0000-0000-465a-49d846701ec2": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-west1/agents/agentregistry-00000000-0000-0000-465a-49d846701ec2",
+    "agentId": "urn:agent:projects-260088329841:projects:260088329841:locations:us-west1:aiplatform:reasoningEngines:5801133299308953600",
+    "location": "us-west1",
+    "displayName": "Price Match Agent",
+    "description": "Front-line Price Match Verification Agent. Calculates discounts and approves <= 10% directly.",
+    "protocols": [
+      {
+        "type": "CUSTOM",
+        "interfaces": [
+          {
+            "url": "https://us-west1-aiplatform.googleapis.com/v1/projects/260088329841/locations/us-west1/reasoningEngines/5801133299308953600:query",
+            "protocolBinding": "HTTP_JSON"
+          },
+          {
+            "url": "https://us-west1-aiplatform.googleapis.com/v1/projects/260088329841/locations/us-west1/reasoningEngines/5801133299308953600:streamQuery",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-465a-49d846701ec2",
+    "createTime": "2026-09-26T08:39:01.597161Z",
+    "updateTime": "2026-09-26T08:39:01.597161Z",
+    "attributes": {
+      "agentregistry.googleapis.com/system/RuntimeIdentity": {
+        "principal": "principal://agents.global.org-616463121992.system.id.goog/resources/aiplatform/projects/260088329841/locations/us-west1/reasoningEngines/5801133299308953600"
+      },
+      "agentregistry.googleapis.com/system/Framework": {
+        "framework": "google-adk"
+      },
+      "agentregistry.googleapis.com/system/RuntimeReference": {
+        "uri": "//aiplatform.googleapis.com/projects/260088329841/locations/us-west1/reasoningEngines/5801133299308953600"
+      }
+    }
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-west1/agents/agentregistry-00000000-0000-0000-465f-6e7fdf6b80ef": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-west1/agents/agentregistry-00000000-0000-0000-465f-6e7fdf6b80ef",
+    "agentId": "urn:agent:projects-260088329841:projects:260088329841:locations:us-west1:aiplatform:reasoningEngines:8016059891045105664",
+    "location": "us-west1",
+    "displayName": "markdown-strategy-agent",
+    "description": "Corporate Markdown Strategy Agent. Analyzes inventory, cost, and margin data in BigQuery.",
+    "version": "1.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "protocolVersion": "0.3.0",
+        "interfaces": [
+          {
+            "url": "https://us-west1-aiplatform.googleapis.com/v1beta1/projects/260088329841/locations/us-west1/reasoningEngines/8016059891045105664/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      },
+      {
+        "type": "CUSTOM",
+        "interfaces": [
+          {
+            "url": "https://us-west1-aiplatform.googleapis.com/v1/projects/260088329841/locations/us-west1/reasoningEngines/8016059891045105664:query",
+            "protocolBinding": "HTTP_JSON"
+          },
+          {
+            "url": "https://us-west1-aiplatform.googleapis.com/v1/projects/260088329841/locations/us-west1/reasoningEngines/8016059891045105664:streamQuery",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-465f-6e7fdf6b80ef",
+    "createTime": "2026-09-26T08:39:13.547632Z",
+    "updateTime": "2026-09-26T08:39:13.547632Z",
+    "attributes": {
+      "agentregistry.googleapis.com/system/RuntimeIdentity": {
+        "principal": "principal://agents.global.org-616463121992.system.id.goog/resources/aiplatform/projects/260088329841/locations/us-west1/reasoningEngines/8016059891045105664"
+      },
+      "agentregistry.googleapis.com/system/Framework": {
+        "framework": "google-adk"
+      },
+      "agentregistry.googleapis.com/system/RuntimeReference": {
+        "uri": "//aiplatform.googleapis.com/projects/260088329841/locations/us-west1/reasoningEngines/8016059891045105664"
+      }
+    },
+    "card": {
+      "type": "A2A_AGENT_CARD",
+      "content": {
+        "name": "markdown-strategy-agent",
+        "description": "Corporate Markdown Strategy Agent. Analyzes inventory, cost, and margin data in BigQuery.",
+        "version": "1.0",
+        "skills": [],
+        "defaultOutputModes": [
+          "text"
+        ],
+        "defaultInputModes": [
+          "text"
+        ],
+        "url": "https://us-west1-aiplatform.googleapis.com/v1beta1/projects/260088329841/locations/us-west1/reasoningEngines/8016059891045105664/a2a",
+        "preferredTransport": "HTTP+JSON",
+        "capabilities": {
+          "streaming": true
+        },
+        "protocolVersion": "0.3.0",
+        "supportsAuthenticatedExtendedCard": true
+      }
+    }
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-central1/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-central1/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "agentId": "urn:agent:googleapis.com:locations:global:workspaceagent:workspaceagent--a2a",
+    "location": "global",
+    "displayName": "Workspace Agent",
+    "description": "A Workspace Agent is designed to power AI-driven features and workflows across Google Workspace applications like Docs and Slides.  It connects AI models, Workspace data, and tools to deliver intelligent features and automation within the Google Workspace ecosystem.",
+    "version": "1.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "protocolVersion": "0.3.0",
+        "interfaces": [
+          {
+            "url": "https://workspaceagent.googleapis.com/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": "create_presentation",
+        "name": "create_presentation",
+        "description": "Analyzes text to extract key topics and generates a multi-slide presentation. The URL to the presentation deck that was created will be returned in the text response."
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "createTime": "2026-02-06T16:37:41.413148Z",
+    "updateTime": "2026-02-06T16:37:41.413148Z"
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-central1/agents/agentregistry-00000000-0000-0000-8e47-5c9c18c95477": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-central1/agents/agentregistry-00000000-0000-0000-8e47-5c9c18c95477",
+    "agentId": "urn:agent:projects-260088329841:projects:260088329841:locations:us-central1:aiplatform:reasoningEngines:4153334255423848448",
+    "location": "us-central1",
+    "displayName": "simple-agent",
+    "protocols": [
+      {
+        "type": "CUSTOM",
+        "interfaces": [
+          {
+            "url": "https://us-central1-aiplatform.googleapis.com/v1/projects/260088329841/locations/us-central1/reasoningEngines/4153334255423848448:query",
+            "protocolBinding": "HTTP_JSON"
+          },
+          {
+            "url": "https://us-central1-aiplatform.googleapis.com/v1/projects/260088329841/locations/us-central1/reasoningEngines/4153334255423848448:streamQuery",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-8e47-5c9c18c95477",
+    "createTime": "2026-09-26T09:09:59.662170Z",
+    "updateTime": "2026-09-26T09:09:59.662170Z",
+    "attributes": {
+      "agentregistry.googleapis.com/system/Framework": {
+        "framework": "google-adk"
+      },
+      "agentregistry.googleapis.com/system/RuntimeReference": {
+        "uri": "//aiplatform.googleapis.com/projects/260088329841/locations/us-central1/reasoningEngines/4153334255423848448"
+      },
+      "agentregistry.googleapis.com/system/RuntimeIdentity": {
+        "principal": "sa://service-260088329841@gcp-sa-aiplatform-re.iam.gserviceaccount.com"
+      }
+    }
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-east1/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-east1/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "agentId": "urn:agent:googleapis.com:locations:global:workspaceagent:workspaceagent--a2a",
+    "location": "global",
+    "displayName": "Workspace Agent",
+    "description": "A Workspace Agent is designed to power AI-driven features and workflows across Google Workspace applications like Docs and Slides.  It connects AI models, Workspace data, and tools to deliver intelligent features and automation within the Google Workspace ecosystem.",
+    "version": "1.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "protocolVersion": "0.3.0",
+        "interfaces": [
+          {
+            "url": "https://workspaceagent.googleapis.com/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": "create_presentation",
+        "name": "create_presentation",
+        "description": "Analyzes text to extract key topics and generates a multi-slide presentation. The URL to the presentation deck that was created will be returned in the text response."
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "createTime": "2026-02-06T16:37:41.413148Z",
+    "updateTime": "2026-02-06T16:37:41.413148Z"
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-east1/agents/agentregistry-00000000-0000-0000-5edd-89f74dd98e7a": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us-east1/agents/agentregistry-00000000-0000-0000-5edd-89f74dd98e7a",
+    "agentId": "urn:agent:projects-260088329841:projects:260088329841:locations:us-east1:aiplatform:reasoningEngines:8592645987674095616",
+    "location": "us-east1",
+    "displayName": "smart-recipe-assistant",
+    "protocols": [
+      {
+        "type": "CUSTOM",
+        "interfaces": [
+          {
+            "url": "https://us-east1-aiplatform.googleapis.com/v1/projects/260088329841/locations/us-east1/reasoningEngines/8592645987674095616:query",
+            "protocolBinding": "HTTP_JSON"
+          },
+          {
+            "url": "https://us-east1-aiplatform.googleapis.com/v1/projects/260088329841/locations/us-east1/reasoningEngines/8592645987674095616:streamQuery",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-5edd-89f74dd98e7a",
+    "createTime": "2026-09-26T09:42:44.505954Z",
+    "updateTime": "2026-09-26T09:42:44.505954Z",
+    "attributes": {
+      "agentregistry.googleapis.com/system/Framework": {
+        "framework": "google-adk"
+      },
+      "agentregistry.googleapis.com/system/RuntimeReference": {
+        "uri": "//aiplatform.googleapis.com/projects/260088329841/locations/us-east1/reasoningEngines/8592645987674095616"
+      },
+      "agentregistry.googleapis.com/system/RuntimeIdentity": {
+        "principal": "sa://service-260088329841@gcp-sa-aiplatform-re.iam.gserviceaccount.com"
+      }
+    }
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/europe-west1/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/europe-west1/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "agentId": "urn:agent:googleapis.com:locations:global:workspaceagent:workspaceagent--a2a",
+    "location": "global",
+    "displayName": "Workspace Agent",
+    "description": "A Workspace Agent is designed to power AI-driven features and workflows across Google Workspace applications like Docs and Slides.  It connects AI models, Workspace data, and tools to deliver intelligent features and automation within the Google Workspace ecosystem.",
+    "version": "1.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "protocolVersion": "0.3.0",
+        "interfaces": [
+          {
+            "url": "https://workspaceagent.googleapis.com/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": "create_presentation",
+        "name": "create_presentation",
+        "description": "Analyzes text to extract key topics and generates a multi-slide presentation. The URL to the presentation deck that was created will be returned in the text response."
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "createTime": "2026-02-06T16:37:41.413148Z",
+    "updateTime": "2026-02-06T16:37:41.413148Z"
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/europe-west2/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/europe-west2/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "agentId": "urn:agent:googleapis.com:locations:global:workspaceagent:workspaceagent--a2a",
+    "location": "global",
+    "displayName": "Workspace Agent",
+    "description": "A Workspace Agent is designed to power AI-driven features and workflows across Google Workspace applications like Docs and Slides.  It connects AI models, Workspace data, and tools to deliver intelligent features and automation within the Google Workspace ecosystem.",
+    "version": "1.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "protocolVersion": "0.3.0",
+        "interfaces": [
+          {
+            "url": "https://workspaceagent.googleapis.com/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": "create_presentation",
+        "name": "create_presentation",
+        "description": "Analyzes text to extract key topics and generates a multi-slide presentation. The URL to the presentation deck that was created will be returned in the text response."
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "createTime": "2026-02-06T16:37:41.413148Z",
+    "updateTime": "2026-02-06T16:37:41.413148Z"
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/asia-east1/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/asia-east1/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "agentId": "urn:agent:googleapis.com:locations:global:workspaceagent:workspaceagent--a2a",
+    "location": "global",
+    "displayName": "Workspace Agent",
+    "description": "A Workspace Agent is designed to power AI-driven features and workflows across Google Workspace applications like Docs and Slides.  It connects AI models, Workspace data, and tools to deliver intelligent features and automation within the Google Workspace ecosystem.",
+    "version": "1.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "protocolVersion": "0.3.0",
+        "interfaces": [
+          {
+            "url": "https://workspaceagent.googleapis.com/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": "create_presentation",
+        "name": "create_presentation",
+        "description": "Analyzes text to extract key topics and generates a multi-slide presentation. The URL to the presentation deck that was created will be returned in the text response."
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "createTime": "2026-02-06T16:37:41.413148Z",
+    "updateTime": "2026-02-06T16:37:41.413148Z"
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/global/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/global/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "agentId": "urn:agent:googleapis.com:locations:global:workspaceagent:workspaceagent--a2a",
+    "location": "global",
+    "displayName": "Workspace Agent",
+    "description": "A Workspace Agent is designed to power AI-driven features and workflows across Google Workspace applications like Docs and Slides.  It connects AI models, Workspace data, and tools to deliver intelligent features and automation within the Google Workspace ecosystem.",
+    "version": "1.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "protocolVersion": "0.3.0",
+        "interfaces": [
+          {
+            "url": "https://workspaceagent.googleapis.com/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": "create_presentation",
+        "name": "create_presentation",
+        "description": "Analyzes text to extract key topics and generates a multi-slide presentation. The URL to the presentation deck that was created will be returned in the text response."
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "createTime": "2026-02-06T16:37:41.413148Z",
+    "updateTime": "2026-02-06T16:37:41.413148Z"
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/global/agents/agentregistry-00000000-0000-0000-41f1-4c922c5f1968": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/global/agents/agentregistry-00000000-0000-0000-41f1-4c922c5f1968",
+    "agentId": "urn:agent:projects-260088329841:projects:260088329841:locations:global:discoveryengine:collections:default_collection:engines:build-with-google:assistants:default_assistant:agents:core_assistant",
+    "location": "global",
+    "displayName": "Gemini Enterprise Core Assistant",
+    "description": "The core assistant that interprets user requests and delegates them to specialized agents to fulfill the user's request.",
+    "version": "1.0.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "interfaces": [
+          {
+            "url": "https://discoveryengine.googleapis.com/v1/projects/260088329841/locations/global/collections/default_collection/engines/build-with-google/assistants/default_assistant/agents/core_assistant/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-41f1-4c922c5f1968",
+    "createTime": "2026-09-26T08:42:08.184500Z",
+    "updateTime": "2026-09-26T08:42:08.184500Z",
+    "attributes": {
+      "agentregistry.googleapis.com/system/RuntimeIdentity": {
+        "principal": "principal://agents.global.org-616463121992.system.id.goog/resources/discoveryengine/projects/260088329841/locations/global/engines/build-with-google/assistants/default_assistant/agents/default/core_assistant"
+      },
+      "agentregistry.googleapis.com/system/RuntimeReference": {
+        "uri": "//discoveryengine.googleapis.com/projects/260088329841/locations/global/collections/default_collection/engines/build-with-google/assistants/default_assistant/agents/core_assistant"
+      }
+    }
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/global/agents/agentregistry-00000000-0000-0000-fd26-f871eee47c4f": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/global/agents/agentregistry-00000000-0000-0000-fd26-f871eee47c4f",
+    "agentId": "urn:agent:projects-260088329841:projects:260088329841:locations:global:discoveryengine:collections:default_collection:engines:build-with-google:assistants:default_assistant:agents:deep_research",
+    "location": "global",
+    "displayName": "Deep Research",
+    "description": "This agent is a specialized agent that gathers, analyzes, and understands information from internal and external sources. It generates a plan, an in-depth report, and a summary.",
+    "version": "1.0.0",
+    "uid": "agentregistry-00000000-0000-0000-fd26-f871eee47c4f",
+    "createTime": "2026-09-26T08:42:09.242637Z",
+    "updateTime": "2026-09-26T08:42:09.242637Z",
+    "attributes": {
+      "agentregistry.googleapis.com/system/RuntimeIdentity": {
+        "principal": "principal://agents.global.org-616463121992.system.id.goog/resources/discoveryengine/projects/260088329841/locations/global/engines/build-with-google/assistants/default_assistant/agents/default/deep_research"
+      },
+      "agentregistry.googleapis.com/system/RuntimeReference": {
+        "uri": "//discoveryengine.googleapis.com/projects/260088329841/locations/global/collections/default_collection/engines/build-with-google/assistants/default_assistant/agents/deep_research"
+      }
+    }
+  },
+  "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171": {
+    "name": "projects/qwiklabs-gcp-01-2aad14f2c696/locations/us/agents/agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "agentId": "urn:agent:googleapis.com:locations:global:workspaceagent:workspaceagent--a2a",
+    "location": "global",
+    "displayName": "Workspace Agent",
+    "description": "A Workspace Agent is designed to power AI-driven features and workflows across Google Workspace applications like Docs and Slides.  It connects AI models, Workspace data, and tools to deliver intelligent features and automation within the Google Workspace ecosystem.",
+    "version": "1.0",
+    "protocols": [
+      {
+        "type": "A2A_AGENT",
+        "protocolVersion": "0.3.0",
+        "interfaces": [
+          {
+            "url": "https://workspaceagent.googleapis.com/a2a",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "id": "create_presentation",
+        "name": "create_presentation",
+        "description": "Analyzes text to extract key topics and generates a multi-slide presentation. The URL to the presentation deck that was created will be returned in the text response."
+      }
+    ],
+    "uid": "agentregistry-00000000-0000-0000-630f-070a9d06e171",
+    "createTime": "2026-02-06T16:37:41.413148Z",
+    "updateTime": "2026-02-06T16:37:41.413148Z"
+  }
+}
